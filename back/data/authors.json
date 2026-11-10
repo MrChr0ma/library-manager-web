@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "name": "Douglas Adams"
+  },
+  {
+    "id": 1,
+    "name": "Isaac Asimov"
+  },
+  {
+    "id": 2,
+    "name": "J.R.R. Tolkien"
+  },
+  {
+    "id": 3,
+    "name": "Frank Herbert"
+  },
+  {
+    "id": 4,
+    "name": "Ursula K. Le Guin"
+  },
+  {
+    "id": 5,
+    "name": "Philip K. Dick"
+  },
+  {
+    "id": 6,
+    "name": "Arthur C. Clarke"
+  },
+  {
+    "id": 7,
+    "name": "Hector"
+  },
+  {
+    "id": 8,
+    "name": "Jr Tolkien"
+  },
+  {
+    "id": 9,
+    "name": "Jr Tolkien"
+  }
+]

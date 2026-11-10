@@ -1,0 +1,80 @@
+[
+  {
+    "id": 0,
+    "title": "Le Guide du voyageur galactique",
+    "authorId": 0,
+    "state": "en stock"
+  },
+  {
+    "id": 1,
+    "title": "Le Dernier Restaurant avant la fin du monde",
+    "authorId": 0,
+    "state": "emprunté"
+  },
+  {
+    "id": 2,
+    "title": "Fondation",
+    "authorId": 1,
+    "state": "en stock"
+  },
+  {
+    "id": 3,
+    "title": "Les Robots",
+    "authorId": 1,
+    "state": "emprunté"
+  },
+  {
+    "id": 4,
+    "title": "Le Seigneur des anneaux",
+    "authorId": 2,
+    "state": "en stock"
+  },
+  {
+    "id": 5,
+    "title": "Le Hobbit",
+    "authorId": 2,
+    "state": "en stock"
+  },
+  {
+    "id": 6,
+    "title": "Dune",
+    "authorId": 3,
+    "state": "emprunté"
+  },
+  {
+    "id": 7,
+    "title": "Le Messie de Dune",
+    "authorId": 3,
+    "state": "en stock"
+  },
+  {
+    "id": 8,
+    "title": "La Main gauche de la nuit",
+    "authorId": 4,
+    "state": "en stock"
+  },
+  {
+    "id": 9,
+    "title": "Blade Runner",
+    "authorId": 5,
+    "state": "emprunté"
+  },
+  {
+    "id": 10,
+    "title": "2001 : L'Odyssée de l'espace",
+    "authorId": 6,
+    "state": "en stock"
+  },
+  {
+    "id": 11,
+    "title": "test",
+    "authorId": 0,
+    "state": "emprunté"
+  },
+  {
+    "id": 12,
+    "title": "test2",
+    "authorId": 7,
+    "state": "en stock"
+  }
+]

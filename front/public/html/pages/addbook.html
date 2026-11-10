@@ -1,0 +1,15 @@
+<h1>Ajouter un livre</h1>
+<form id="add-book-form" autocomplete="off">
+  <input type="text" id="title" placeholder="Nom du livre" required />
+  <select id="author" required>
+    <option value="">Nom d'un auteur</option>
+  </select>
+  <select id="state">
+    <option value="en stock">En stock</option>
+    <option value="emprunté">Emprunté</option>
+  </select>
+  <div class="submit-row">
+    <button type="submit">Valider la création</button>
+  </div>
+  <div class="message"></div>
+</form>

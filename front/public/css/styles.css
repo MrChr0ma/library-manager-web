@@ -1,0 +1,289 @@
+:root {
+  --primary: #1f57b8;
+  --primary-dark: #163f8c;
+  --primary-darker: #0e2c66;
+  --accent: #e8a01e;
+  --text: #333333;
+  --muted: #888888;
+  --border: #d8d8d8;
+  --table-head: #7d7d7d;
+  --green: #1f8e3b;
+  --red: #c43030;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: #fff;
+  min-height: 100vh;
+}
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+button {
+  font-family: inherit;
+  font-size: 13px;
+  padding: 9px 16px;
+  background: var(--primary);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover { background: var(--primary-dark); }
+
+input[type="text"], input[type="password"], select {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 9px 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 14px;
+  display: block;
+  width: 260px;
+  background: #fff;
+  color: #000;
+}
+input:focus, select:focus { border-color: var(--primary); }
+input::placeholder { color: #000; }
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 0;
+}
+.sidebar a, .sidebar button {
+  display: block;
+  width: 100%;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  text-align: left;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 16px 26px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.sidebar a:hover, .sidebar button:hover {
+  background: var(--primary-dark);
+  text-decoration: none;
+}
+.sidebar .spacer { flex: 1; }
+
+.main-content {
+  flex: 1;
+  padding: 40px 50px;
+}
+.main-content h1 {
+  font-weight: bold;
+  margin: 0 0 26px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 28px;
+  color: #000;
+}
+.main-content h2 {
+  font-weight: bold;
+  color: #000;
+  margin: 28px 0 18px;
+  font-size: 20px;
+}
+
+/* ===== Search bar ===== */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+.search-bar input {
+  margin-bottom: 0;
+  width: 260px;
+  border-radius: 4px;
+}
+.search-bar button {
+  padding: 0 22px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+/* ===== Forms (add/edit pages) ===== */
+form:not(.search-bar):not(.login-card) {
+  width: 260px;
+  margin-top: 0;
+}
+form .submit-row {
+  text-align: center;
+  margin-top: 10px;
+}
+form .submit-row button {
+  font-size: 13px;
+  padding: 9px 18px;
+  border-radius: 4px;
+}
+
+/* ===== Tables ===== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 720px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+thead {
+  background: var(--table-head);
+  color: #fff;
+}
+thead th {
+  padding: 9px 14px;
+  text-align: left;
+  font-weight: 700;
+  border: 1px solid var(--border);
+}
+tbody td {
+  padding: 7px 14px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+tbody tr:hover td { background: #f7f9fc; }
+td a { color: var(--primary); text-decoration: underline; }
+td.state-stock { color: var(--green); }
+td.state-borrowed { color: var(--red); }
+td.center { text-align: center; }
+td.empty { text-align: center; color: var(--muted); font-style: italic; }
+
+/* ===== Page de connexion ===== */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+.login-card {
+  background: var(--primary);
+  padding: 22px;
+  width: 300px;
+  border-radius: 8px;
+}
+.login-card h1 {
+  margin: 0 0 18px;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.login-inner {
+  background: #fff;
+  padding: 18px 16px 16px;
+  border-radius: 4px;
+}
+.login-inner input {
+  width: 100%;
+  font-size: 13px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #000;
+}
+.login-inner input::placeholder { color: #999; }
+.login-inner button {
+  width: 100%;
+  background: var(--primary);
+  padding: 11px;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 4px;
+}
+.login-inner button:hover { background: var(--primary-dark); }
+.login-card .error {
+  color: #ffb4b4;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+  min-height: 16px;
+}
+
+/* ===== Tableau de bord ===== */
+.stats {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.stat-card {
+  border: 1px solid var(--border);
+  padding: 18px 22px 22px;
+  width: 175px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+.stat-card .label {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.stat-card .value {
+  font-size: 38px;
+  font-weight: bold;
+  color: var(--accent);
+  margin-top: auto;
+  text-align: center;
+  line-height: 1;
+}
+
+/* ===== Messages ===== */
+.message {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--green);
+  min-height: 16px;
+  text-align: center;
+}
+.message.error { color: var(--red); }
+
+/* ===== Responsive ===== */
+@media (max-width: 800px) {
+  .layout { flex-direction: column; }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 0;
+  }
+  .sidebar a, .sidebar button {
+    padding: 14px 16px;
+    white-space: nowrap;
+  }
+  .sidebar .spacer { display: none; }
+  .main-content { padding: 24px; }
+  input[type="text"], input[type="password"], select {
+    width: 100%;
+  }
+  .search-bar { flex-wrap: wrap; }
+  .search-bar input { width: 100%; }
+  form:not(.search-bar):not(.login-card) {
+    width: 100%;
+  }
+}
